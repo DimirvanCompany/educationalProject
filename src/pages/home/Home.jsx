@@ -7,6 +7,9 @@ function Home(){
             <Navbar />
             <SubHeader />
             <OurCourses />
+            <div>
+                amirreza
+            </div>
         </>
     )
 }
