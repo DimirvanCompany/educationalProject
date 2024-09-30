@@ -60,9 +60,9 @@ function OurCourses() {
   ];
   return (
     <section className="my-5">
-      <Container className="text-gray-300 !px-3 m-auto">
+      <Container className="text-gray-300 px-3 mx-auto !my-[150px]">
         <Row className="flex justify-center items-center !my-12">
-          <span className="our-courses text-center">دوره های ما</span>
+          <span className="sub-line text-center">دوره های ما</span>
         </Row>
         <Row className="flex justify-center items-center gap-y-2">
           {data.map((item) => (

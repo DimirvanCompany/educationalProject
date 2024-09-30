@@ -4,7 +4,7 @@ import development from "../../assets/images/development.png";
 function SubHeader() {
   return (
     <section className="my-5">
-      <Container className="text-gray-300 px-3 m-auto">
+      <Container className="text-gray-300 px-3 mx-auto !my-[50px]">
         <Row className="flex justify-center items-center">
           <Col md={6} className="flex flex-col gap-y-6">
             <h2 className="flex gap-x-2">

@@ -18,3 +18,11 @@ body {
   background-color: #8a2be2 !important;
   color: #ddd;
 }
+.sub-line::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  border-left: 150px double #8f17ff;
+  display: block;
+  margin: 10px auto 0 auto;
+}
