@@ -4,6 +4,8 @@ import OurCourses from "../../components/our-courses/OurCourses";
 import WhyUs from "../../components/Why_Us/WhyUs";
 import NewCourses from "../../components/new-courses/NewCourses";
 import Plans from "../../components/plans/Plans";
+import HowDoIStart from "../../components/How Do I Start/HowDoIStart";
+import JoinUse from '../../components/Join_Us/JoinUs'
 function Home() {
   return (
     <>
@@ -13,6 +15,8 @@ function Home() {
       <OurCourses />
       <NewCourses />
       <Plans />
+      <HowDoIStart />
+      <JoinUse />
     </>
   );
 }
