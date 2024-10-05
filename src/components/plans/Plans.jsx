@@ -32,9 +32,7 @@ function Plans() {
     <section className="my-5">
       <Container className="text-gray-300 px-3 mx-auto !my-[150px]">
         <Row className="flex justify-center items-center !my-12">
-          <span className="sub-line text-center">
-            مناسب ترین پلن رو انتخاب کن!
-          </span>
+          <h4 className="sub-line text-center">مناسب ترین پلن رو انتخاب کن!</h4>
         </Row>
         <Row className="flex justify-center items-center gap-y-2">
           {planData.map((item) => (

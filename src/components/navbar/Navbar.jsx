@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Col, Container, Offcanvas, Row } from "react-bootstrap"
+import { Button, Col, Container, Offcanvas, Row } from "react-bootstrap";
 import { AiOutlineShopping } from "react-icons/ai";
 import { CiShoppingBasket } from "react-icons/ci";
 import { FaInstagram, FaRegComments, FaTelegram } from "react-icons/fa";
@@ -13,24 +13,23 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { PiContactlessPayment } from "react-icons/pi";
 import { SiAppstore } from "react-icons/si";
 import { VscPackage } from "react-icons/vsc";
-import { HashLink } from "react-router-hash-link"
+import { HashLink } from "react-router-hash-link";
 
-function Navbar(){
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    const [darkMode, setDarkMode] = useState()
-    const ToggleHandler = ()=>{
-        const Theme =  document.getElementById('theme')
-        Theme.classList.toggle('dark')
-    }
-    return(
-        <header className="bg-gray-300 dark:bg-gray-950 dark:text-gray-300 py-2">
+function Navbar() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [darkMode, setDarkMode] = useState();
+  const ToggleHandler = () => {
+    const Theme = document.getElementById("theme");
+    Theme.classList.toggle("dark");
+  };
+  return (
+    <header className="bg-gray-300 dark:bg-gray-950 dark:text-gray-300 py-2">
       <Container className="px-3 m-auto">
         <Row>
           <Col xs={8} md={6} lg={10}>
             <ul className="d-none gap-x-6 d-xl-flex items-center list-none p-0 h-[100%] ">
-             
               <li title="خانه">
                 <HashLink
                   to="/#"
@@ -278,38 +277,47 @@ function Navbar(){
             </Offcanvas>
           </Col>
           <Col xs={4} md={6} lg={2}>
-                <ul className="d-none gap-x-6 d-lg-flex items-center list-none p-0 h-[100%] mt-1">
-                    <p href="" onClick={ToggleHandler} className="no-underline text-gray-300">
-                        <li>
-                            <span><MdOutlineDarkMode  size={'30px'}/></span>
-                        </li>
-                    </p>
-                    <a href="" className="no-underline text-gray-300">
-                        <li>
-                            <span><FiSearch  size={'30px'}/></span>
-                        </li>
-                    </a>
-                    <a href="" className="no-underline text-gray-300">
-                        <li>
-                            <span><AiOutlineShopping  size={'30px'}/></span>
-                        </li>
-                    </a>
-                    <li>
-                        <p title="ورود | ثبت نام" className="no-underline cursor-pointer select-none text-white bg-[#8f17ff] px-3 py-2  rounded-lg text-center ">
-                        <span className="dark:text-gray-300">
-                            ورود
-                        </span>
-                        <span className="transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
-                        </p>
-                    </li>
-                    
-
-                </ul>
+            <ul className="d-none gap-x-6 d-lg-flex items-center list-none p-0 h-[100%] mt-1">
+              <p
+                href=""
+                onClick={ToggleHandler}
+                className="no-underline text-gray-300"
+              >
+                <li>
+                  <span>
+                    <MdOutlineDarkMode size={"30px"} />
+                  </span>
+                </li>
+              </p>
+              <a href="" className="no-underline text-gray-300">
+                <li>
+                  <span>
+                    <FiSearch size={"30px"} />
+                  </span>
+                </li>
+              </a>
+              <a href="" className="no-underline text-gray-300">
+                <li>
+                  <span>
+                    <AiOutlineShopping size={"30px"} />
+                  </span>
+                </li>
+              </a>
+              <li>
+                <p
+                  title="ورود | ثبت نام"
+                  className="no-underline cursor-pointer select-none text-white bg-[#8f17ff] px-3 py-2  rounded-lg text-center "
+                >
+                  <span className="dark:text-gray-300">ورود</span>
+                  <span className="transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
+                </p>
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
     </header>
-    )
+  );
 }
 
-export default Navbar
+export default Navbar;

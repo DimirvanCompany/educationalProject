@@ -4,9 +4,9 @@ function WhyUs() {
   return (
     <section>
       <Container className="px-3 mx-auto !my-[150px]">
-        <p className="sub-line text-gray-400 text-center text-lg !my-8w">
+        <h4 className="sub-line text-gray-400 text-center text-lg !my-8">
           چرا ما ؟
-        </p>
+        </h4>
         <p className="text-gray-200 text-2xl my-3 text-center">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
         </p>
