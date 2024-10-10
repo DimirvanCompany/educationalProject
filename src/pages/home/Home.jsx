@@ -6,6 +6,7 @@ import NewCourses from "../../components/new-courses/NewCourses";
 import Plans from "../../components/plans/Plans";
 import HowDoIStart from "../../components/How Do I Start/HowDoIStart";
 import JoinUse from '../../components/Join_Us/JoinUs'
+import JoinOurPodcast from "../../components/JoinOurPodcast/JoinOurPodcast";
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
       <Plans />
       <HowDoIStart />
       <JoinUse />
+      <JoinOurPodcast />
     </>
   );
 }
